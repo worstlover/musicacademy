@@ -1,0 +1,1646 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$720000$TqYeGuV95f0Za6rU8y6vRV$RSYyYTJMyPmaEitkslNuZcpcJrP3TB1KGIOHcGCV/u8=",
+    "last_login": "2026-08-28T17:19:18.956Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "manak@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-08-28T17:10:41.393Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "m3cif1zn78uffhsihuffk2m256yjcw8z",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSFAy6Mu3fsNZJgZpGogKe3K-O_apAvd3nPOfYkI21ri1nmJM4mz0OL0uyXAB9cd0B3qrUlsdV3mJHdFHrTLayN-Xg7376BAL9_a2cETg5t8sjnkSaEegwWVE5kxQGCbmNAgjC6jd1lpbQZ0YXCaLGsl3h_w0jgE:1x00EZ:5XJASPyzCZjD9RDW7xtYiBs_I69tmcz09FVTPWbgVPM",
+    "expire_date": "2026-09-11T17:19:19.145Z"
+  }
+},
+{
+  "model": "core.student",
+  "pk": 2,
+  "fields": {
+    "first_name": "محمدنیما",
+    "last_name": "",
+    "national_code": null,
+    "phone_number": "09135319699",
+    "parent_name": "محمدعلی",
+    "parent_phone": "۰۹۱۳۴۵۸۸۳۱۰",
+    "birth_date": null,
+    "address": null,
+    "face_encodings": [],
+    "warning_interval_hours": 1,
+    "last_warning_sent": null,
+    "warning_enabled": true,
+    "credit_limit": 200000,
+    "is_blocked": false,
+    "blocked_at": null,
+    "is_active": false,
+    "created_at": "2026-08-28T18:26:11.992Z"
+  }
+},
+{
+  "model": "core.student",
+  "pk": 3,
+  "fields": {
+    "first_name": "محمدزینلی",
+    "last_name": "",
+    "national_code": null,
+    "phone_number": "09134588310",
+    "parent_name": "ندارد",
+    "parent_phone": ".",
+    "birth_date": null,
+    "address": null,
+    "face_encodings": [],
+    "warning_interval_hours": 24,
+    "last_warning_sent": null,
+    "warning_enabled": true,
+    "credit_limit": 0,
+    "is_blocked": false,
+    "blocked_at": null,
+    "is_active": true,
+    "created_at": "2026-08-29T03:55:48.504Z"
+  }
+},
+{
+  "model": "core.teacher",
+  "pk": 1,
+  "fields": {
+    "first_name": "مهدی",
+    "last_name": "شیخ زاده",
+    "national_code": null,
+    "phone_number": "09130039788",
+    "specialization": "تنبک نوازی",
+    "commission_percent": 70,
+    "initial_balance": 0,
+    "is_active": true,
+    "created_at": "2026-08-28T17:38:43.512Z"
+  }
+},
+{
+  "model": "core.teacher",
+  "pk": 2,
+  "fields": {
+    "first_name": "تست",
+    "last_name": "تستی",
+    "national_code": null,
+    "phone_number": "09135319699",
+    "specialization": "تست",
+    "commission_percent": 90,
+    "initial_balance": 0,
+    "is_active": true,
+    "created_at": "2026-08-28T17:51:29.185Z"
+  }
+},
+{
+  "model": "core.teacher",
+  "pk": 3,
+  "fields": {
+    "first_name": "حسین",
+    "last_name": "ایمانی",
+    "national_code": null,
+    "phone_number": "09140706121",
+    "specialization": "سه تار",
+    "commission_percent": 70,
+    "initial_balance": 0,
+    "is_active": true,
+    "created_at": "2026-08-31T20:12:12.797Z"
+  }
+},
+{
+  "model": "core.ratetemplate",
+  "pk": 1,
+  "fields": {
+    "name": "انفرادی",
+    "description": "کلاس خصوصی",
+    "is_active": true,
+    "created_at": "2026-08-28T17:39:36.092Z"
+  }
+},
+{
+  "model": "core.ratetemplate",
+  "pk": 2,
+  "fields": {
+    "name": "گروهی",
+    "description": "گروهی ۲ نفره",
+    "is_active": true,
+    "created_at": "2026-08-28T17:40:15.871Z"
+  }
+},
+{
+  "model": "core.ratetemplate",
+  "pk": 3,
+  "fields": {
+    "name": "گروهی ۴نفره",
+    "description": "ندارد",
+    "is_active": true,
+    "created_at": "2026-08-28T18:05:05.388Z"
+  }
+},
+{
+  "model": "core.teacherrate",
+  "pk": 1,
+  "fields": {
+    "teacher": 1,
+    "rate_template": 1,
+    "hourly_rate": 900000
+  }
+},
+{
+  "model": "core.teacherrate",
+  "pk": 2,
+  "fields": {
+    "teacher": 2,
+    "rate_template": 1,
+    "hourly_rate": 800000
+  }
+},
+{
+  "model": "core.teacherrate",
+  "pk": 3,
+  "fields": {
+    "teacher": 1,
+    "rate_template": 2,
+    "hourly_rate": 500000
+  }
+},
+{
+  "model": "core.teacherrate",
+  "pk": 4,
+  "fields": {
+    "teacher": 3,
+    "rate_template": 1,
+    "hourly_rate": 800000
+  }
+},
+{
+  "model": "core.course",
+  "pk": 1,
+  "fields": {
+    "name": "تنبک نوازی - انفرادی",
+    "teacher": 1,
+    "rate_template": 1,
+    "duration_minutes": 30,
+    "base_fee": 100000,
+    "is_active": true,
+    "created_at": "2026-08-28T17:39:44.011Z"
+  }
+},
+{
+  "model": "core.course",
+  "pk": 2,
+  "fields": {
+    "name": "گیتار",
+    "teacher": 2,
+    "rate_template": 1,
+    "duration_minutes": 30,
+    "base_fee": 800000,
+    "is_active": true,
+    "created_at": "2026-08-31T18:06:17.232Z"
+  }
+},
+{
+  "model": "core.course",
+  "pk": 3,
+  "fields": {
+    "name": "تمبک",
+    "teacher": 1,
+    "rate_template": null,
+    "duration_minutes": 30,
+    "base_fee": 3700000,
+    "is_active": false,
+    "created_at": "2026-09-01T07:39:55.806Z"
+  }
+},
+{
+  "model": "core.studentcourse",
+  "pk": 2,
+  "fields": {
+    "student": 2,
+    "course": 1,
+    "enrollment_date": "2026-08-31T17:52:03.645Z",
+    "is_active": true
+  }
+},
+{
+  "model": "core.studentcourse",
+  "pk": 3,
+  "fields": {
+    "student": 3,
+    "course": 2,
+    "enrollment_date": "2026-08-31T18:23:55.089Z",
+    "is_active": true
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 1,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-28T19:14:02.916Z",
+    "status": "confirmed",
+    "fee": 100000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T19:14:02.918Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 2,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-28T19:21:34.596Z",
+    "status": "confirmed",
+    "fee": 100000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T19:21:34.597Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 3,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-28T20:10:18.314Z",
+    "status": "confirmed",
+    "fee": 900000,
+    "verification_method": "manual",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:10:18.315Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 4,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T04:30:00Z",
+    "status": "pending",
+    "fee": 500000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:29:20.864Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 5,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-07T04:30:00Z",
+    "status": "cancelled",
+    "fee": 500000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:29:20.995Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 6,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-14T04:30:00Z",
+    "status": "pending",
+    "fee": 500000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:29:21.105Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 7,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-21T04:30:00Z",
+    "status": "pending",
+    "fee": 500000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:29:21.261Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 8,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-31T04:30:00Z",
+    "status": "pending",
+    "fee": 900000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:30:24.543Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 9,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-09-07T04:30:00Z",
+    "status": "pending",
+    "fee": 900000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:30:24.770Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 10,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-09-14T04:30:00Z",
+    "status": "pending",
+    "fee": 900000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:30:24.949Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 11,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-09-21T04:30:00Z",
+    "status": "pending",
+    "fee": 900000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:30:25.105Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 12,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T04:30:00Z",
+    "status": "pending",
+    "fee": 450000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:40:59.030Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 13,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-07T04:30:00Z",
+    "status": "pending",
+    "fee": 450000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:40:59.230Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 14,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-14T04:30:00Z",
+    "status": "pending",
+    "fee": 450000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:40:59.343Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 15,
+  "fields": {
+    "student": 2,
+    "teacher": 1,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-21T04:30:00Z",
+    "status": "pending",
+    "fee": 450000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T20:40:59.452Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 16,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-28T21:13:09.857Z",
+    "status": "confirmed",
+    "fee": 300000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-28T21:13:09.858Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 17,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-29T04:17:49.764Z",
+    "status": "confirmed",
+    "fee": 800000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-29T04:17:49.764Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 18,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 60,
+    "session_date": "2026-08-29T05:36:37.521Z",
+    "status": "confirmed",
+    "fee": 800000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-29T05:36:37.525Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 19,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T14:30:00Z",
+    "status": "pending",
+    "fee": 400000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T12:50:20.945Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 20,
+  "fields": {
+    "student": 3,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T15:00:00Z",
+    "status": "pending",
+    "fee": 400000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T12:51:48.767Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 21,
+  "fields": {
+    "student": 2,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-02T15:00:00Z",
+    "status": "pending",
+    "fee": 400000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T12:54:05.725Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 22,
+  "fields": {
+    "student": 3,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-09-02T14:30:00Z",
+    "status": "pending",
+    "fee": 400000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T12:55:13.884Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 23,
+  "fields": {
+    "student": 3,
+    "teacher": 2,
+    "course": null,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T17:22:55.538Z",
+    "status": "confirmed",
+    "fee": 400000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T17:22:55.540Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 24,
+  "fields": {
+    "student": 3,
+    "teacher": 2,
+    "course": 2,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T18:30:00Z",
+    "status": "pending",
+    "fee": 400000,
+    "verification_method": "face",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T18:25:19.826Z"
+  }
+},
+{
+  "model": "core.classsession",
+  "pk": 25,
+  "fields": {
+    "student": 3,
+    "teacher": 2,
+    "course": 2,
+    "duration_minutes": 30,
+    "session_date": "2026-08-31T18:32:32.088Z",
+    "status": "confirmed",
+    "fee": 400000,
+    "verification_method": "code",
+    "face_verified": false,
+    "face_match_score": null,
+    "check_in_time": null,
+    "created_at": "2026-08-31T18:32:32.089Z"
+  }
+},
+{
+  "model": "core.sessionverificationcode",
+  "pk": 1,
+  "fields": {
+    "session": 1,
+    "code": "0000225157",
+    "created_at": "2026-08-28T19:14:03.167Z",
+    "expires_at": "2026-08-28T19:44:03.166Z",
+    "used_at": "2026-08-28T19:14:03.166Z",
+    "is_used": true
+  }
+},
+{
+  "model": "core.sessionverificationcode",
+  "pk": 2,
+  "fields": {
+    "session": 2,
+    "code": "0000261001",
+    "created_at": "2026-08-28T19:21:34.792Z",
+    "expires_at": "2026-08-28T19:51:34.791Z",
+    "used_at": "2026-08-28T19:21:34.791Z",
+    "is_used": true
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 2,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 900000,
+    "description": "شارژ دستی",
+    "status": "approved",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T18:26:30.550Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 3,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 100000,
+    "description": "جلسه با تست تستی",
+    "status": "approved",
+    "session": 1,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T19:14:03.288Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 4,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 100000,
+    "description": "شارژ credit توسط مدیر",
+    "status": "approved",
+    "session": null,
+    "payment_method": "credit",
+    "created_at": "2026-08-28T19:16:58.158Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 5,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 500000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "approved",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T19:20:11.941Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 6,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 100000,
+    "description": "جلسه با تست تستی",
+    "status": "approved",
+    "session": 2,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T19:21:34.927Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 7,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 900000,
+    "description": "جلسه با مهدی شیخ زاده",
+    "status": "approved",
+    "session": 3,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T20:10:18.465Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 8,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 100000,
+    "description": "شارژ دستی توسط مدیر",
+    "status": "approved",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T20:23:39.977Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 9,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 100000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "rejected",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T20:54:13.584Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 10,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 100000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "rejected",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T21:09:43.512Z",
+    "receipt_image": "1826570833:6744788953426435841:1:deceef14d61075899e18691830ba546c764163e7b48f218773cdd8e1c0f64b548211e6c76420e4b7"
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 11,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 300000,
+    "description": "جلسه با تست تستی",
+    "status": "approved",
+    "session": 16,
+    "payment_method": "manual",
+    "created_at": "2026-08-28T21:13:10.037Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 12,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 400000,
+    "description": "شارژ credit توسط مدیر",
+    "status": "approved",
+    "session": null,
+    "payment_method": "credit",
+    "created_at": "2026-08-29T03:29:41.759Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 13,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 50000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "pending",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-29T04:07:07.435Z",
+    "receipt_image": "1826570833:1698294494498594562:1:deceef14d61075899e18691830ba546c780e0177335405d29cfbc3d20d1e9bacd2bde785235468452b60276bea77fedb"
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 14,
+  "fields": {
+    "student": 2,
+    "transaction_type": "credit",
+    "amount": 1000000,
+    "description": "شارژ check - سررسید 1405/08/01",
+    "status": "approved",
+    "session": null,
+    "payment_method": "check",
+    "created_at": "2026-08-29T04:17:26.849Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 15,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 800000,
+    "description": "جلسه تست تستی",
+    "status": "approved",
+    "session": 17,
+    "payment_method": "manual",
+    "created_at": "2026-08-29T04:17:49.946Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 16,
+  "fields": {
+    "student": 2,
+    "transaction_type": "debit",
+    "amount": 800000,
+    "description": "جلسه تست تستی",
+    "status": "approved",
+    "session": 18,
+    "payment_method": "manual",
+    "created_at": "2026-08-29T05:36:37.658Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 17,
+  "fields": {
+    "student": 3,
+    "transaction_type": "credit",
+    "amount": 400000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "approved",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-31T14:13:46.370Z",
+    "receipt_image": "968675327:-2915209323377189119:0:d683e4811fe6d81dbbef6dd7a1e4ee1c"
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 18,
+  "fields": {
+    "student": 3,
+    "transaction_type": "debit",
+    "amount": 400000,
+    "description": "جلسه 30 دقیقه‌ای با تست تستی",
+    "status": "approved",
+    "session": 23,
+    "payment_method": "manual",
+    "created_at": "2026-08-31T17:22:57.715Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 19,
+  "fields": {
+    "student": 3,
+    "transaction_type": "credit",
+    "amount": 400000,
+    "description": "شارژ (در انتظار تایید)",
+    "status": "approved",
+    "session": null,
+    "payment_method": "manual",
+    "created_at": "2026-08-31T18:29:28.086Z",
+    "receipt_image": "968675327:-1500321521979351296:0:d683e4811fe6d81dbbef6dd7a1e4ee1c"
+  }
+},
+{
+  "model": "core.wallettransaction",
+  "pk": 20,
+  "fields": {
+    "student": 3,
+    "transaction_type": "debit",
+    "amount": 400000,
+    "description": "جلسه 30 دقیقه‌ای با تست تستی",
+    "status": "approved",
+    "session": 25,
+    "payment_method": "manual",
+    "created_at": "2026-08-31T18:32:32.218Z",
+    "receipt_image": null
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 1,
+  "fields": {
+    "teacher": 2,
+    "session": 1,
+    "amount": 20000,
+    "is_settled": true,
+    "settled_at": "2026-08-29T03:38:27.782Z",
+    "created_at": "2026-08-28T19:14:03.410Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 2,
+  "fields": {
+    "teacher": 2,
+    "session": 2,
+    "amount": 20000,
+    "is_settled": true,
+    "settled_at": "2026-08-29T03:38:27.782Z",
+    "created_at": "2026-08-28T19:21:35.040Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 3,
+  "fields": {
+    "teacher": 1,
+    "session": 3,
+    "amount": 270000,
+    "is_settled": true,
+    "settled_at": "2026-08-29T03:59:53.742Z",
+    "created_at": "2026-08-28T20:10:18.563Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 4,
+  "fields": {
+    "teacher": 2,
+    "session": 16,
+    "amount": 60000,
+    "is_settled": true,
+    "settled_at": "2026-08-29T03:38:27.782Z",
+    "created_at": "2026-08-28T21:13:10.177Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 5,
+  "fields": {
+    "teacher": 2,
+    "session": 17,
+    "amount": 640000,
+    "is_settled": true,
+    "settled_at": "2026-08-31T19:15:50.623Z",
+    "created_at": "2026-08-29T04:17:50.057Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 6,
+  "fields": {
+    "teacher": 2,
+    "session": 18,
+    "amount": 640000,
+    "is_settled": false,
+    "settled_at": null,
+    "created_at": "2026-08-29T05:36:37.779Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 7,
+  "fields": {
+    "teacher": 2,
+    "session": 23,
+    "amount": 360000,
+    "is_settled": true,
+    "settled_at": "2026-08-31T19:15:50.790Z",
+    "created_at": "2026-08-31T17:22:58.141Z"
+  }
+},
+{
+  "model": "core.teacherearning",
+  "pk": 8,
+  "fields": {
+    "teacher": 2,
+    "session": 25,
+    "amount": 360000,
+    "is_settled": false,
+    "settled_at": null,
+    "created_at": "2026-08-31T18:32:32.317Z"
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 1,
+  "fields": {
+    "teacher": 2,
+    "amount": 40000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T20:01:36.803Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 2,
+  "fields": {
+    "teacher": 2,
+    "amount": 40000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T20:02:59.564Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 3,
+  "fields": {
+    "teacher": 2,
+    "amount": 20000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T20:12:31.242Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 4,
+  "fields": {
+    "teacher": 2,
+    "amount": 40000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T20:43:16.930Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 5,
+  "fields": {
+    "teacher": 2,
+    "amount": 40000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T20:44:09.686Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 6,
+  "fields": {
+    "teacher": 2,
+    "amount": 100000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-28T21:13:27.883Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 7,
+  "fields": {
+    "teacher": 2,
+    "amount": 50000,
+    "settlement_type": "cash",
+    "status": "paid",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-29T03:38:27.644Z",
+    "paid_at": "2026-08-29T03:38:27.643Z",
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 8,
+  "fields": {
+    "teacher": 1,
+    "amount": 70000,
+    "settlement_type": "cash",
+    "status": "paid",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-29T03:59:53.612Z",
+    "paid_at": "2026-08-29T03:59:53.610Z",
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 9,
+  "fields": {
+    "teacher": 2,
+    "amount": 1280000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-29T10:51:38.590Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 10,
+  "fields": {
+    "teacher": 2,
+    "amount": 280000,
+    "settlement_type": "cash",
+    "status": "paid",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-29T10:56:00.824Z",
+    "paid_at": "2026-08-29T10:56:00.823Z",
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 11,
+  "fields": {
+    "teacher": 2,
+    "amount": 1280000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-31T11:42:08.950Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 12,
+  "fields": {
+    "teacher": 2,
+    "amount": 280000,
+    "settlement_type": "cash",
+    "status": "paid",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-31T14:07:09.392Z",
+    "paid_at": "2026-08-31T14:07:09.391Z",
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 13,
+  "fields": {
+    "teacher": 2,
+    "amount": 2000000,
+    "settlement_type": "cash",
+    "status": "pending",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-31T18:52:45.464Z",
+    "paid_at": null,
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.settlement",
+  "pk": 14,
+  "fields": {
+    "teacher": 2,
+    "amount": 1000000,
+    "settlement_type": "cash",
+    "status": "paid",
+    "due_date": null,
+    "description": null,
+    "created_by": null,
+    "created_at": "2026-08-31T19:15:50.921Z",
+    "paid_at": "2026-08-31T19:15:50.920Z",
+    "warning_sent": false
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 1,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": null,
+    "preferred_end": null,
+    "preferred_times": [],
+    "status": "rejected",
+    "created_at": "2026-08-31T13:14:29.297Z",
+    "responded_at": "2026-08-31T17:43:53.229Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 2,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": null,
+    "preferred_end": null,
+    "preferred_times": [],
+    "status": "pending",
+    "created_at": "2026-08-31T13:14:29.495Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 3,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": "18:30:00",
+    "preferred_end": "20:00:00",
+    "preferred_times": [
+      "18:30",
+      "20:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:30:09.930Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 4,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": "18:30:00",
+    "preferred_end": "20:00:00",
+    "preferred_times": [
+      "18:30",
+      "20:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:30:10.112Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 5,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": "18:30:00",
+    "preferred_end": "22:00:00",
+    "preferred_times": [
+      "18:30",
+      "22:00"
+    ],
+    "status": "accepted",
+    "created_at": "2026-08-31T13:31:37.139Z",
+    "responded_at": "2026-08-31T13:37:10.878Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 6,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": "18:30:00",
+    "preferred_end": "22:00:00",
+    "preferred_times": [
+      "18:30",
+      "22:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:31:37.407Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 7,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": "18:00:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:00",
+      "21:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:46:24.320Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 8,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": "18:00:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:00",
+      "21:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:46:24.432Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 9,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": "18:00:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:00",
+      "21:00"
+    ],
+    "status": "accepted",
+    "created_at": "2026-08-31T13:47:11.880Z",
+    "responded_at": "2026-08-31T13:47:47.897Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 10,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": "18:00:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:00",
+      "21:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T13:47:12.141Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 11,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 22,
+    "preferred_start": "18:30:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:30",
+      "21:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T14:08:47.662Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 12,
+  "fields": {
+    "requesting_student": 2,
+    "current_session": 21,
+    "target_student": 3,
+    "target_session": 20,
+    "preferred_start": "18:30:00",
+    "preferred_end": "21:00:00",
+    "preferred_times": [
+      "18:30",
+      "21:00"
+    ],
+    "status": "rejected",
+    "created_at": "2026-08-31T14:08:47.833Z",
+    "responded_at": "2026-08-31T17:43:31.267Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 13,
+  "fields": {
+    "requesting_student": 3,
+    "current_session": 22,
+    "target_student": 2,
+    "target_session": 21,
+    "preferred_start": "18:00:00",
+    "preferred_end": "22:00:00",
+    "preferred_times": [
+      "18:00",
+      "22:00"
+    ],
+    "status": "accepted",
+    "created_at": "2026-08-31T14:09:45.907Z",
+    "responded_at": "2026-08-31T14:10:04.461Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 14,
+  "fields": {
+    "requesting_student": 3,
+    "current_session": 22,
+    "target_student": 2,
+    "target_session": 19,
+    "preferred_start": "18:00:00",
+    "preferred_end": "22:00:00",
+    "preferred_times": [
+      "18:00",
+      "22:00"
+    ],
+    "status": "rejected",
+    "created_at": "2026-08-31T14:09:46.203Z",
+    "responded_at": "2026-08-31T17:43:27.218Z"
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 15,
+  "fields": {
+    "requesting_student": 3,
+    "current_session": 22,
+    "target_student": 2,
+    "target_session": 21,
+    "preferred_start": "18:30:00",
+    "preferred_end": "20:00:00",
+    "preferred_times": [
+      "18:30",
+      "20:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T20:00:52.668Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.sessionswaprequest",
+  "pk": 16,
+  "fields": {
+    "requesting_student": 3,
+    "current_session": 22,
+    "target_student": null,
+    "target_session": null,
+    "preferred_start": "10:00:00",
+    "preferred_end": "13:00:00",
+    "preferred_times": [
+      "10:00",
+      "13:00"
+    ],
+    "status": "pending",
+    "created_at": "2026-08-31T20:01:37.238Z",
+    "responded_at": null
+  }
+},
+{
+  "model": "core.absencerequest",
+  "pk": 1,
+  "fields": {
+    "student": 2,
+    "session": 5,
+    "reason": "استراحت",
+    "status": "approved",
+    "created_at": "2026-08-29T04:08:45.749Z",
+    "approved_by": null,
+    "approved_at": null
+  }
+},
+{
+  "model": "core.absencerequest",
+  "pk": 2,
+  "fields": {
+    "student": 3,
+    "session": 22,
+    "reason": "ox",
+    "status": "pending",
+    "created_at": "2026-08-31T20:00:08.109Z",
+    "approved_by": null,
+    "approved_at": null
+  }
+}
+]
