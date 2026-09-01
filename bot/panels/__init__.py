@@ -1,0 +1,3 @@
+from .student_panel import handle_student_callback, handle_student_text
+from .teacher_panel import handle_teacher_callback, handle_teacher_text
+from .manager.menu import handle_manager_callback, handle_manager_text
